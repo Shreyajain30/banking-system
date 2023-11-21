@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Bank</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- header section -->
+   <header class="header">
+    <a href="#" class="logo"><span class="bank">🏦</span> The Spark Bank</a>
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+      </div>
+    <nav class="navbar">
+    <a href="#main">Home</a>
+    <a href="#details">Costumers</a>
+    <a href="#transfer-container">Transfer Money</a>
+    <a href="#history">History</a>
+   </nav>
+   </header> 
+
+   <!-- Home  -->
+
+<section class="home" id="main">
+    <div class="mainpage">
+      <div class="mp">
+        <h1 class="h1 mh">Welcome to Spark Bank!</h1>
+        <br>
+        <p class="mainp">Securely manage your money with our trusted banking platform.</p>
+        <br>
+        <br>
+        <button> <a href="" class="btn ">About us</a></button>
+      </div>
+      <div class="mp img1">
+        <img src="Images/Group 48249.png" alt="" />
+    </div>
+
+    </div>
+
+  </section>
+
+<!-- features -->
+<section class="features" id=""features>
+    <h2 class="heading ">Our Features</h2>
+    <div class="box-container">
+    <div class="box">
+        <img  class="box-image b1"  src="Images/customer.png" alt="Costumers">
+        <h2 class="h">View all costumers</h2>
+        <p>Being a costumer means you are a part of something wonderful for life.</p>
+        <button  class="button"><a href="#details" class="box-btn">know more →</a></button>
+    </div>
+
+    <div class="box">
+        <img class="box-image"  src="Images/transaction.png" alt="transaction">
+        <h2>Hassle-free transaction</h2>
+        <p>Achieving costumer's trust through safe and transparent Transactions.</p>
+
+        <button  class="button"><a href="#transfer-container" class="box-btn">know more →</a></button>
+    </div>
+    
+    <div class="box bx3">
+        <img class="box-image"  src="Images/history.png" alt="history">
+        <h2>check history</h2>
+        <p>Details about each and every transaction you made in the past.</p>
+
+        <button  class="button "><a href="#history" class="box-btn">know more →</a></button>
+    </div>
+</div>
+</section>
+
+    <!-- costumer's table -->
+    <section class="details" id="details">
+        <h2 class="heading cstmr">Costumer Details</h2>
+        <table id="accTable">
+            <tr>
+                <th>Account No.</th>
+                <th>Email ID</th>
+                <th>Name</th>
+                <th>Balance</th>
+            </tr>
+
+            <tr>
+                <td>001</td>
+                <td>john@example.com</td>
+                <td>John Doe</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>max@example.com</td>
+                <td>Max Brown</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>leo@example.com</td>
+                <td>Leo Smith</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>004</td>
+                <td>ava@example.com</td>
+                <td>Ava Davis</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>005</td>
+                <td>ben@example.com</td>
+                <td>Ben Clark</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>006</td>
+                <td>zeo@example.com</td>
+                <td>Zoe Wilson</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>007</td>
+                <td>eli@example.com</td>
+                <td>Eli Anderson</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>008</td>
+                <td>mia@example.com</td>
+                <td>Mia Johnson</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>009</td>
+                <td>jay@example.com</td>
+                <td>Jay Lee</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>010</td>
+                <td>sam@example.com</td>
+                <td>Sam Taylor</td>
+                <td>5000</td>
+            </tr>
+
+        </table>
+    </section>
+
+<!-- transaction -->
+<div class="transfer-container" id="transfer-container">
+<h2 class="heading">transfer money</h2>
+<div class="transfer">
+    <div class="titems">
+    <label for="fromAccount">sender:</label>
+    <br>
+    <select  id="fromAccount">
+        <option value="001">(001)</option>
+        <option value="002">(002)</option>
+        <option value="003">(003)</option>
+        <option value="004">(004)</option>
+        <option value="005">(005)</option>
+        <option value="006">(006)</option>
+        <option value="007">(007)</option>
+        <option value="008">(008)</option>
+        <option value="009">(009)</option>
+        <option value="010">(010)</option>
+    </select>
+    </div>
+    <div class="titems">
+    <label for="toAccount">reciever:</label>
+    <br>
+    <select  id="toAccount">
+        <option value="001">(001)</option>
+        <option value="002">(002)</option>
+        <option value="003">(003)</option>
+        <option value="004">(004)</option>
+        <option value="005">(005)</option>
+        <option value="006">(006)</option>
+        <option value="007">(007)</option>
+        <option value="008">(008)</option>
+        <option value="009">(009)</option>
+        <option value="010">(010)</option>
+    </select>
+    </div>
+    <div class="titems">
+    <label for="amount">amount:</label>
+    <br>
+    <input type="number" min="1" id="amount">
+    </div>
+</div>
+<div id="transfer-btn">
+<button class="btn"   onclick="transferMoney()">transfer</button>
+</div>
+</div>
+
+<!-- check history -->
+<section class="history" id="history">
+    <h2 class="heading"> Transaction history</h2>
+    <br>
+   <div id="transaction-table">
+     <table id="trans-table">
+        <tr >
+            <th>from</th>
+            <th>to</th>
+            <th>amount</th>
+        </tr>
+    </table>
+</div>
+</section>
+
+<!-- js file -->
+<script src="script.js"></script>
+</body>
+</html>
